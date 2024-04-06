@@ -6,32 +6,20 @@
 */
 
 // 순열과 조합으로 모두 가능하다.
-
+// 재귀함수로도 구현 가능 .
 #include<bits/stdc++.h>
 using namespace std;
 
 // 순열
-int a[] = {20
-         ,7
-         ,23
-         ,19
-         ,10
-         ,15
-         ,25
-         ,8
-         ,13};
+int a[] = {20,7,23,19,10,15,25,8,13};
 //int a[9];
 int main(){
     cin.tie(NULL);
     cout.tie(NULL);
-
-//     for(int i = 0; i<9; i++){
-//         cin >> a[i];
-//     }
     sort(a, a+9);
 
     do{
-        int sum =0 ;
+        int sum =0;
         for(int i =0; i < 7; i++){
             sum += a[i];
         }
@@ -42,5 +30,4 @@ int main(){
     }
     return 0;
 }
-
 
