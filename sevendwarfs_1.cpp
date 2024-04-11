@@ -10,7 +10,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int a[9];
-int n = 9; r = 7;
+int n = 9; int r = 7;
 void solve(){
     int sum = 0;
     for(int i = 0; i < r; i++){   // 7개에 해당하는 것을 더함
@@ -40,7 +40,7 @@ int main(){
     for(int i = 0;  i < n; i++){
         cin >> a[i];
     }
-    void makePermutation(int n, int r, int depth)
+    void makePermutation(int n, int r, int depth);
     return 0;
 }
 
