@@ -1,17 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
-int n, cnt[26];
-string s, ret;
 
+// 배열 카운트
+// a ~ z 0 ~25
+
+int N,cnt[26];
+string s, ret;
 int main(){
-    cin >> n;
-    for(int i = 0; i < n; i++){
+    cin >> N;
+    for(int i  = 0; i < N; i++){
         cin >> s;
-        cnt[s[0] - 'a']++;   // 'a' : 97
+        cnt[s[0] - 'a']++;
     }
+
     for(int i = 0; i < 26; i++){
-        if(cnt[i] >= 5){
-            ret += (i+'a');  // i는 0~25 까지 의미
+        if(cnt[i] >=5){
+            ret += (i+'a');
         }
     }
     if(ret.size()) cout << ret << "\n";
